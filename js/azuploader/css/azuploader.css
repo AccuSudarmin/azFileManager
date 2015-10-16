@@ -1,0 +1,162 @@
+.azuploader-back-overlay {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.57);
+   z-index: 999;
+   top: 0;
+   text-align: center;
+}
+
+.azuploader-back-overlay:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.azuploader-modal-box {
+   max-width: 70%;
+   display: inline-block;
+   vertical-align: middle;
+   background: #F8F6F6;
+   box-sizing: border-box;
+   max-height: 90%;
+   padding: 0;
+   position: relative;
+}
+
+.azuploader-head {
+   display: inline-block;
+   line-height: 40px;
+   width: 100%;
+   background: #3A3939;
+   color: white;
+   box-sizing: border-box;
+   position: relative;
+   z-index: 2;
+}
+
+.azuploader-sidemenu {
+   width: 19.6%;
+   display: block;
+   margin: 0px;
+   vertical-align: top;
+   overflow: hidden;
+   height: 100%;
+   position: absolute;
+   background-color: #4E4E4E;
+   top: 0;
+   z-index: 1;
+   box-sizing: border-box;
+   padding-top: 40px;
+   text-align: left;
+   color: white;
+}
+
+.azuploader-sidemenu ul {
+   list-style: none;
+   padding-left: 10px;
+}
+
+.azuploader-sidemenu ul li {
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.azuploader-body {
+   width: 80%;
+   display: inline-block;
+   margin-left: 20%;
+   overflow: hidden;
+}
+
+.azuploader-navigation {
+   display: inline-block;
+   color: #4B4B4B;
+   border-bottom: 1px solid #F0EAEA;
+   font-size: 13px;
+   text-align: left;
+   padding: 15px 0px;
+   width: 90%;
+}
+
+.azuploader-content {
+   padding: 20px;
+   display: block;
+   text-align: left;
+   overflow-y: scroll;
+   height: 400px;
+}
+
+.azuploader-content > .azuploader-container {
+   display: inline-block;
+   width: 210px;
+   height: 200px;
+   padding: 5px;
+   overflow: hidden;
+   background-color: white;
+   margin: 10px;
+   border: 1px solid #DCDCDC;
+   position: relative;
+   text-align: center;
+}
+
+.azuploader-content > .azuploader-container:hover {
+   background-color: #bbb;
+}
+
+.azuploader-crop {
+   display: inline-block;
+   width: 95%;
+   overflow: hidden;
+}
+
+.azuploader-crop > img {
+   height: 200px;
+   position: relative;
+   left: 100%;
+   margin-left: -200%;
+}
+
+.azuploader-title {
+   display: block;
+   position: absolute;
+   bottom: 15px;
+   width: 100%;
+   left: 0;
+}
+
+.azuploader-manager {
+   padding: 10px;
+   text-align: left;
+   border-top: 1px solid #F0EAEA;
+   display: inline-block;
+   width: 90%;
+   box-sizing: border-box;
+}
+
+.azuploader-manager > .button {
+   float: right;
+   background-color: #4E4E4E;
+   padding: 5px 10px;
+   color: white;
+   border: 0;
+}
+
+.azuploader-span-method {
+   margin: auto;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   color: white;
+   display: block;
+   height: -moz-max-content;
+   height: -webkit-max-content;
+}
+
+.azuploader-span-method a , .azuploader-folder {
+   cursor: pointer;
+}
