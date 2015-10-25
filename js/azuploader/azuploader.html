@@ -1,92 +1,27 @@
 <template id="azuploader">
-   <div class="azuploader-back-overlay">
+   <div class="azuploader-back-overlay" id='azuploader-back-overlay'>
       <div class="azuploader-modal-box">
-         <div class="azuploader-head"> File Manager </div>
+         <div class="azuploader-head">
+            <span class='azuploader-head-title'> File Manager </span>
+            <span class="azuploader-close-button"><a id="azbutton-close">X</a></span>
+         </div>
 
          <div class="azuploader-sidemenu">
-            <ul>
-               <li>Folder 1</li>
-               <li>Folder 2
-                  <ul>
-                     <li>Folder 2 1</li>
-                     <li>Folder 2 2
-                        <ul>
-                           <li>Folder 2 2 1</li>
-                           <li>Folder 2 2 2</li>
-                        </ul>
-                     </li>
-                  </ul>
-               </li>
-               <li>Folder 3</li>
+            <ul id="azlist-folder">
+
             </ul>
          </div>
 
          <div class="azuploader-body">
-            <div class="azuploader-navigation"> userfiles/ </div>
+            <div class="azuploader-navigation" id="aznavigation"></div>
 
-            <div class="azuploader-content">
-
-               <div class="azuploader-container">
-                  <div class="azuploader-crop">
-                     <img src="./userfiles/image/2.jpg">
-                  </div>
-                  <span class="azuploader-span-method"><a>Get Name</a></span>
-               </div>
-
-               <div class="azuploader-container">
-                  <div class="azuploader-crop">
-                     <img src="./userfiles/image/3.jpg">
-                  </div>
-                  <span class="azuploader-span-method"><a>Get Name</a></span>
-               </div>
-
-               <div class="azuploader-container">
-                  <div class="azuploader-crop">
-                     <img src="./userfiles/image/3.jpg">
-                  </div>
-                  <span class="azuploader-span-method"><a>Get Name</a></span>
-               </div>
-
-               <div class="azuploader-container">
-                  <div class="azuploader-crop">
-                     <img src="./userfiles/image/3.jpg">
-                  </div>
-                  <span class="azuploader-span-method"><a>Get Name</a></span>
-               </div>
-
-               <div class="azuploader-container">
-                  <div class="azuploader-crop">
-                     <img src="./userfiles/image/3.jpg">
-                  </div>
-                  <span class="azuploader-span-method"><a>Get Name</a></span>
-               </div>
-
-               <div class="azuploader-container">
-                  <div class="azuploader-crop">
-                     <img src="./userfiles/image/3.jpg">
-                  </div>
-                  <span class="azuploader-span-method"><a>Get Name</a></span>
-               </div>
-
-               <div class="azuploader-container azuploader-folder">
-                  <div class="azuploader-crop">
-                     <img src="./userfiles/folder.jpg">
-                  </div>
-                  <span class="azuploader-title">coba</span>
-               </div>
-
-               <div class="azuploader-container">
-                  <div class="azuploader-crop">
-                     <img src="./userfiles/image/photo1.png">
-                  </div>
-                  <span class="azuploader-span-method"><a>Get Name</a></span>
-               </div>
-
+            <div class="azuploader-content" id="azlist-files">
             </div>
-
             <div class="azuploader-manager">
-               <input type="file">
-               <button type="button" class="button">Upload</button>
+               <form action="" id="azformupload" method="post" enctype="multipart/form-data">
+                  <input type="file" id="azfiles">
+                  <button class="button" name="upload">Upload</button>
+               </form>
             </div>
          </div>
       </div>

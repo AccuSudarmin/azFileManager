@@ -35,6 +35,18 @@
    box-sizing: border-box;
    position: relative;
    z-index: 2;
+   text-align: center;
+}
+
+.azuploader-head-title {
+   display: inline-block;
+}
+
+.azuploader-close-button {
+   position: absolute;
+   right: 10px;
+   top: 0px;
+   display: block;
 }
 
 .azuploader-sidemenu {
